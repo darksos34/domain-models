@@ -1,4 +1,4 @@
-package dev.jda.model.library.dto;
+package dev.jda.domain.models;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Null;
@@ -10,18 +10,16 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.springframework.hateoas.RepresentationModel;
 
-import java.util.List;
-
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Schema(title = "user", description = "Pojo of a User")
-public class UserDTO extends RepresentationModel<UserDTO> {
+@Schema(title = "profile", description = "Pojo  of a Profile")
+public class ProfileDTO extends RepresentationModel<ProfileDTO> {
 
     @Null
-    @Schema(title = "id", accessMode = Schema.AccessMode.READ_ONLY, description = "Unique resource identification of a USER (UUID4)", format = "uuid")
+    @Schema(title = "id", accessMode = Schema.AccessMode.READ_ONLY, description = "Unique resource identification of a PROFILE (UUID4)", format = "uuid")
     private String uuid;
 
     @Null
@@ -36,8 +34,7 @@ public class UserDTO extends RepresentationModel<UserDTO> {
     @Schema(title = "Code", requiredMode = Schema.RequiredMode.REQUIRED, description = "A string variable named CODE with the value \"ABC123\"")
     private String code;
 
-    @Schema(title = "Profile", description = "A private string variable named profile")
-    private List<ProfileDTO> profiles;
-
+    @Schema(title = "User", description = "A private string variable named user")
+    private String user;
 
 }

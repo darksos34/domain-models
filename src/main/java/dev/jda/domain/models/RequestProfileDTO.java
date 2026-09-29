@@ -1,4 +1,4 @@
-package dev.jda.model.library.dto;
+package dev.jda.domain.models;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.Size;
@@ -14,15 +14,14 @@ import org.springframework.hateoas.RepresentationModel;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Schema(title = "user", description = "Pofo of a UserDTO ")
-public class RequestUserDTO extends RepresentationModel<UserDTO> {
+@Schema(title = "profile", description = "Request Pojo of ProfileDTO")
+public class RequestProfileDTO extends RepresentationModel<ProfileDTO> {
 
     @Size(max = 40)
     @Schema(title = "NAME", requiredMode = Schema.RequiredMode.REQUIRED, description = "A private string variable named name")
     private String name;
 
     @Size(max = 15)
-
     @Schema(title = "Code", requiredMode = Schema.RequiredMode.REQUIRED, description = "A string variable named CODE with the value \"ABC123\"")
     private String code;
 
