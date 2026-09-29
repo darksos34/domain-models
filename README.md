@@ -33,7 +33,7 @@ This library can be implemented in your project by following the steps below
 
 ### 2.1 Create a Spring Boot Application
 Go to [Spring](https://start.spring.io) and create a new Spring Boot project.
-![01-start-spring-io](https://github.com/darksos34/modellibary/blob/master/src/main/resources/images/spring-initializr.png)
+![01-start-spring-io](https://github.com/darksos34/domain-models/blob/master/src/main/resources/images/spring-initializr.png)
 
 
 Add the following dependencies:
@@ -102,7 +102,7 @@ Step 1 - Go to your ````Pom.xml```` of the main project and add the following de
 ```
      <dependency>
             <groupId>dev.jda</groupId>
-            <artifactId>demo-model-libary</artifactId>
+            <artifactId>domain-models</artifactId>
             <version><your-version>-SNAPSHOT</version>
      </dependency>
        
@@ -113,13 +113,13 @@ Step 2 - Remove `SNAPSHOT` from the version when you are done developing " remov
 ```
      <dependency>
             <groupId>dev.jda</groupId>
-            <artifactId>demo-model-libary</artifactId>
+            <artifactId>domain-models</artifactId>
             <version><your-version></version>
      </dependency>
        
 ```
 Step 3 - Before using the library, you must reload and install your Maven dependencies. 
-![img.png](https://github.com/darksos34/modellibary/blob/master/src/main/resources/images/maven-reload.png)
+![img.png](https://github.com/darksos34/domain-models/blob/master/src/main/resources/images/maven-reload.png)
 ```
 mvn clean install
 ```

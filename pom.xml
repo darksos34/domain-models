@@ -9,15 +9,15 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>dev.jda</groupId>
-    <artifactId>model-library</artifactId>
+    <artifactId>domain-models</artifactId>
     <version>0.0.8</version>
-    <name>model-library</name>
+    <name>domain-models</name>
     <description>Spring Boot Model Library</description>
     <distributionManagement>
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/darksos34/model-library</url>
+            <url>https://maven.pkg.github.com/darksos34/domain-models</url>
         </repository>
     </distributionManagement>
     <properties>
